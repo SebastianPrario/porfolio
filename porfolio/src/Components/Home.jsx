@@ -47,14 +47,18 @@ function Home() {
             </Nav.Item>
          </Nav>
       
-         <div  id="home" className='vh-100 mt-10row justify-content-center '>
+         <div  id="home" className=' vh-100 mt-4 justify-content-center '>
             <div className='col-12  '>
-               <Card className="border-0">
+               <Card className="border-0 my-2">
                   <Card.Body>
                      <Card.Title className='d-none d-md-block display-1'>{greetingTitle}</Card.Title>
-                     <Card.Title className='d-block d-md-none display-6 my-auto'>{greetingTitle}</Card.Title>
-                     <Card.Text className='mb-3 
+                     <Card.Title className='d-block my-3 d-md-none display-6'>{greetingTitle}</Card.Title>
+                     <Card.Text className='mb-3 d-none d-md-block 
                     display-3'>
+                        {greetingText}
+                     </Card.Text>
+                     <Card.Text className='my-3 d-block d-md-none
+                    display-6'>
                         {greetingText}
                      </Card.Text>
                   </Card.Body>
@@ -66,7 +70,10 @@ function Home() {
       <Card >
          <Card.Body className='bg-dark col-12 justify-content-center mt-3 mb-1'>
             <Card.Title className='display-1 text-light col-4 mx-auto mb-4'>Sobre Mí</Card.Title>
-            <Card.Text className='display-7 col-7 fs-5 text-light mx-auto mb-4'>
+            <Card.Text className='d-none d-md-flex display-7 col-7 fs-5 text-light mx-auto'>
+               {aboutOne}
+            </Card.Text>
+            <Card.Text className='d-flex d-md-none fs-8 text-light mx-auto my-auto'>
                {aboutOne}
             </Card.Text>
          </Card.Body>
