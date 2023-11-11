@@ -47,7 +47,7 @@ function Home() {
             </Nav.Item>
          </Nav>
       
-         <div  id="home" className='row my-5 justify-content-center '>
+         <div  id="home" className='vh-100 mt-10row justify-content-center '>
             <div className='col-12  '>
                <Card className="border-0">
                   <Card.Body>
@@ -61,9 +61,9 @@ function Home() {
                </Card>
             </div>
          </div>
-      <div className='row  my-2  justify-content-center' id="sobremi">
+      <div className='vh-100 row  my-2  justify-content-center' id="sobremi">
          <div className='col-12'>
-      <Card>
+      <Card >
          <Card.Body className='bg-dark col-12 justify-content-center mt-3 mb-1'>
             <Card.Title className='display-1 text-light col-4 mx-auto mb-4'>Sobre Mí</Card.Title>
             <Card.Text className='display-7 col-7 fs-5 text-light mx-auto mb-4'>
@@ -74,9 +74,8 @@ function Home() {
       </div>
       </div>
     
-      <div style={{ width: '100%', height: '500px' }}className='row my-5 justify-content-center' id="tech">
-       
-      <Card className='border-primary mt-5'>
+      <div className='hw-100 row my-5 justify-content-center' id="tech">
+      <Card className='border-primary mt-5 vh-100'>
          <Card.Body >
             <Card.Title className=' display-1 '>Stack Tecnológico </Card.Title>
             <ListGroup horizontal  className="list-group-flush justify-content-center">
@@ -93,7 +92,7 @@ function Home() {
          </Card.Body>
       </Card>
       </div>
-      <Carousel id="misproyectos">
+      <Carousel id="misproyectos" className="vh-100">
          {projects.map(p => (
          <Carousel.Item key={p.name}> 
          <Projects
@@ -139,7 +138,7 @@ function Home() {
        
       </div>
       <div className="my-5">
-           <hr></hr>
+          
       </div>
     
    </Container>
