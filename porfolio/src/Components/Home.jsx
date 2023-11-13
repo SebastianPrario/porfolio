@@ -1,4 +1,5 @@
 import { animateScoll as scroll} from "react-scroll";
+import './Home.css'
 import { greetingText, greetingTitle, aboutOne, projects } from '../constants';
 import Projects from './Projects'
 import Nav from 'react-bootstrap/Nav';
@@ -10,8 +11,7 @@ import {BiLogoPostgresql, BiLogoTypescript} from "react-icons/bi";
 import {BsLinkedin} from "react-icons/bs";
 import {SiMercadopago} from "react-icons/si";
 import {MdOutlineAlternateEmail} from "react-icons/md";
-import { ListGroup , Container} from 'react-bootstrap';
- 
+import { ListGroup , Container, Row, Col, Image} from 'react-bootstrap';
 
 function Home() {
 
@@ -53,7 +53,7 @@ function Home() {
                   <Card.Body>
                      <Card.Title className='d-none d-md-block display-1'>{greetingTitle}</Card.Title>
                      <Card.Title className='d-block my-3 d-md-none display-6'>{greetingTitle}</Card.Title>
-                     <Card.Text className='mb-3 d-none d-md-block 
+                     <Card.Text className='mb-3 d-none d-md-block pt-5
                     display-3'>
                         {greetingText}
                      </Card.Text>
@@ -65,12 +65,14 @@ function Home() {
                </Card>
             </div>
          </div>
-      <div className='vh-100 row  my-2  justify-content-center' id="sobremi">
+      
+      <div className='vh-100 row bg-primary mt-2 align-items-center justify-content-center' id="sobremi">
          <div className='col-12'>
       <Card >
-         <Card.Body className='bg-dark col-12 justify-content-center mt-3 mb-1'>
-            <Card.Title className='display-1 text-light col-4 mx-auto mb-4'>Sobre Mí</Card.Title>
-            <Card.Text className='d-none d-md-flex display-7 col-7 fs-5 text-light mx-auto'>
+         <Card.Body className='bg-dark col-12  mt-3 mb-1'>
+            <Card.Title className='d-none d-md-flex display-2 text-light col-4 mx-auto mb-4'>Sobre Mí</Card.Title>
+            <Card.Title className='d-block d-md-none display-5 text-light col-4 mx-auto mb-1'>Sobre Mí</Card.Title> 
+            <Card.Text className='d-none d-md-flex display-7  col-7 fs-5 text-light mx-auto'>
                {aboutOne}
             </Card.Text>
             <Card.Text className='d-flex d-md-none fs-8 text-light mx-auto my-auto'>
@@ -81,10 +83,10 @@ function Home() {
       </div>
       </div>
     
-      <div className='hw-100 row my-5 justify-content-center' id="tech">
-      <Card className='border-primary mt-5 vh-100'>
-         <Card.Body >
-            <Card.Title className=' display-1 '>Stack Tecnológico </Card.Title>
+      <div className='row my-5 justify-content-center' id="tech">
+      <Card className='border-primary mt-5 '>
+         <Card.Body className="vh-100 d-none d-md-block">
+            <Card.Title className=' display-4 '>Stack Tecnológico </Card.Title>
             <ListGroup horizontal  className="list-group-flush justify-content-center">
                <ListGroup.Item><FaBootstrap size={50} color='blue'/></ListGroup.Item>
                <ListGroup.Item><FaJs  size={50} color='red'/></ListGroup.Item>
@@ -95,11 +97,40 @@ function Home() {
                <ListGroup.Item><BiLogoTypescript size={50}color='#22bbd5'/></ListGroup.Item>
                <ListGroup.Item><SiMercadopago size={50}/></ListGroup.Item>
             </ListGroup>
-        
+         </Card.Body>
+         <Card.Body className="d-flex d-md-none justify-content-center">
+            <Row>
+               <Col className="col-12">
+            <div className=' display-5 '>Stack Tecnológico </div>
+            </Col>
+            </Row>
+            <div className="row">
+            <div className="col-6">
+               <ListGroup  className="list-group-flush justify-content-center">
+         
+               <ListGroup.Item><BiLogoPostgresql size={50}color='#d120b7'/></ListGroup.Item>
+               <ListGroup.Item><FaGithub size={50}color='#e6ab17'/></ListGroup.Item>
+               <ListGroup.Item><BiLogoTypescript size={50}color='#22bbd5'/></ListGroup.Item>
+               <ListGroup.Item><SiMercadopago size={50}/></ListGroup.Item>
+            </ListGroup>
+            </div>
+            <div className="col-6">
+               <ListGroup  className="list-group-flush justify-content-center">
+               <ListGroup.Item><FaBootstrap size={50} color='blue'/></ListGroup.Item>
+               <ListGroup.Item><FaJs  size={50} color='red'/></ListGroup.Item>
+               <ListGroup.Item><FaNodeJs size={50} color='#171010'/></ListGroup.Item>
+              
+            </ListGroup>
+            </div>
+            </div>
          </Card.Body>
       </Card>
       </div>
-      <Carousel id="misproyectos" className="vh-100">
+    <div className="vh-100" id="misproyectos"> 
+    <div className="pt-3">
+    <h1 className="my-4">Mis Proyectos</h1>  
+      <div className="fondo">
+      <Carousel  className=" mx-5" >
          {projects.map(p => (
          <Carousel.Item key={p.name}> 
          <Projects
@@ -112,10 +143,14 @@ function Home() {
          </Carousel.Item>
          ))}
       </Carousel>
-      <div className="my-5">
+      </div>
+      </div>
+   </div>
+
+      <div>
            <hr></hr>
       </div>
-      <div className="row mt-3 mb-10" id='contact'>
+      <div className="vh-100 pt-5 row mt-3 mb-10" id='contact'>
          <h1>Contactarme</h1>
          <Card className='border-primary my-auto'>
          <Card.Body >

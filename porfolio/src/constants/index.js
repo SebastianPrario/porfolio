@@ -3,7 +3,7 @@ import food from './../img/fodd.png'
 import rick from './../img/rick.png'
 
 export const greetingTitle = 'Hola! Soy Sebastián';
-export const greetingText = 'Hola! Bienvenid@ a mi Portfolio! Mi nombre es Sebastián Prario y soy Desarrollador Full Stack. Aqui podrás conocer un poco de mi trabajo . Espero que te guste!!!' 
+export const greetingText = 'Bienvenid@ a mi Portfolio! Mi nombre es Sebastián Prario y soy Desarrollador Full Stack. Aqui podrás conocer un poco de mi trabajo . Espero que te guste!!!' 
 
 export const aboutTitle = 'Sobre Mí';
 
