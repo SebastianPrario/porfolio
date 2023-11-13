@@ -1,5 +1,4 @@
 import { animateScoll as scroll} from "react-scroll";
-import './Home.css'
 import { greetingText, greetingTitle, aboutOne, projects } from '../constants';
 import Projects from './Projects'
 import Nav from 'react-bootstrap/Nav';
@@ -52,8 +51,8 @@ function Home() {
                <Card className="border-0 my-2">
                   <Card.Body>
                      <Card.Title className='d-none d-md-block display-1'>{greetingTitle}</Card.Title>
-                     <Card.Title className='d-block my-3 d-md-none display-6'>{greetingTitle}</Card.Title>
-                     <Card.Text className='mb-3 d-none d-md-block pt-5
+                     <Card.Title className='d-block my-1 d-md-none display-6'>{greetingTitle}</Card.Title>
+                     <Card.Text className='mb-3 d-none d-md-flex pt-5
                     display-3'>
                         {greetingText}
                      </Card.Text>
@@ -126,7 +125,8 @@ function Home() {
          </Card.Body>
       </Card>
       </div>
-    <div className="vh-100" id="misproyectos"> 
+
+    <div className="vh-100 pb-4" id="misproyectos"> 
     <div className="pt-3">
     <h1 className="my-4">Mis Proyectos</h1>  
       <div className="fondo">
@@ -147,41 +147,45 @@ function Home() {
       </div>
    </div>
 
-      <div>
-           <hr></hr>
-      </div>
-      <div className="vh-100 pt-5 row mt-3 mb-10" id='contact'>
-         <h1>Contactarme</h1>
-         <Card className='border-primary my-auto'>
-         <Card.Body >
-           <ListGroup   className="list-group-flush justify-content-center">
-               <ListGroup.Item>
-                <Card.Link href='https://www.linkedin.com/in/sebastianprario/'>
-                <BsLinkedin size={50}color='#090909'/>
-                </Card.Link>
-               </ListGroup.Item>
-               <ListGroup.Item>
-                <Card.Link href='https://github.com/Sebastianprario/'>
-                <FaGithub size={50}color='#110d01'/>
-                </Card.Link>
-               </ListGroup.Item>
-               <ListGroup.Item> 
-               <div className="row justify-content-center">   
-               <div className="col-4 text-end">
-               <MdOutlineAlternateEmail size={40} color='#171010'/>
-               </div>
-               <div className="fs-4 text-start col-8">
-                  Sebastianprario@hotmail.com
-               </div></div>
-               </ListGroup.Item>             
-               </ListGroup>
-              </Card.Body>
-      </Card>
+   <div className="py-5 my-4">
        
-      </div>
-      <div className="my-5">
-          
-      </div>
+   </div>
+   <div className="vh-100 row mb-4 pt-5" id='contact'>
+      <h1 className="d-none d-md-block pt-4 mt-5">Contactame!!</h1>
+      <Card className='border-primarymb-4'>
+      <Card.Body>
+         <ListGroup   className="list-group-flush justify-content-center">
+            <ListGroup.Item>
+               <Card.Link href='https://www.linkedin.com/in/sebastianprario/'>
+               <BsLinkedin size={50}color='#090909'/>
+               </Card.Link>
+            </ListGroup.Item>
+            <ListGroup.Item>
+               <Card.Link href='https://github.com/Sebastianprario/'>
+               <FaGithub size={50}color='#110d01'/>
+               </Card.Link>
+            </ListGroup.Item>
+            <ListGroup.Item> 
+            <div className="row justify-content-center">   
+            <div className="col-4 text-end">
+            <MdOutlineAlternateEmail size={40} color='#171010'/>
+            </div>
+            <div className="d-none d-md-flex fs-2 text-start col-8">
+               Sebastianprario@hotmail.com
+            </div>
+            <div className="d-flex d-md-none fs-4 text-start col-8">
+               Sebastianprario@hotmail.com
+            </div>
+            </div>
+            
+            </ListGroup.Item>             
+            </ListGroup>
+            </Card.Body>
+         </Card>
+   </div>
+   <div className="my-5">
+     
+   </div>
     
    </Container>
    )
