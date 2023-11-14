@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap';
 
 
 
-function Projects({name , info, tecno , deploy , img }) {
+function Projects({ name , info, tecno , deploy , img }) {
     
     
     return (

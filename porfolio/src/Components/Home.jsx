@@ -7,41 +7,40 @@ import { Link } from "react-scroll";
 import Carousel from 'react-bootstrap/Carousel';
 import { FaReact, FaBootstrap ,FaJs, FaNodeJs, FaGithub} from "react-icons/fa";
 import {BiLogoPostgresql, BiLogoTypescript} from "react-icons/bi";
-import {BsLinkedin} from "react-icons/bs";
 import {SiMercadopago} from "react-icons/si";
-import {MdOutlineAlternateEmail} from "react-icons/md";
-import { ListGroup , Container, Row, Col, Image} from 'react-bootstrap';
+import { ListGroup , Container, Row, Col} from 'react-bootstrap';
+import Contact from './../views/Contact'
 
 function Home() {
 
    return (
       <Container>
-         <Nav   className='d-md-flex fixed-top  justify-content-center bg-info' 
+         <Nav className='d-md-flex fixed-top   justify-content-center bg-secondary' 
             activeKey="/home"
             onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}>
             <Nav.Item >
             <Nav.Link>
-            <Link to="home">Inicio</Link>
+            <Link to="home" className="text-white">Inicio</Link>
                </Nav.Link>
             </Nav.Item>
             <Nav.Item>
                <Nav.Link>
-                  <Link to="sobremi">Sobre Mí</Link>
+                  <Link to="sobremi"className="text-white">Sobre Mí</Link>
                </Nav.Link>
             </Nav.Item>
             <Nav.Item>
             <Nav.Link>
-            <Link to="tech">Tecnologías</Link>
+            <Link to="tech"className="text-white">Tecnologías</Link>
                </Nav.Link>
             </Nav.Item>
             <Nav.Item>
             <Nav.Link>
-            <Link to="misproyectos">Proyectos</Link>
+            <Link to="misproyectos"className="text-white">Proyectos</Link>
                </Nav.Link>
             </Nav.Item>
             <Nav.Item>
             <Nav.Link>
-            <Link to="contact">Contactame</Link>
+            <Link to="contact"className="text-danger">Contactame</Link>
                </Nav.Link>
             </Nav.Item>
          </Nav>
@@ -147,46 +146,13 @@ function Home() {
       </div>
    </div>
 
-   <div className="py-5 my-4">
-       
-   </div>
-   <div className="vh-100 row mb-4 pt-5" id='contact'>
-      <h1 className="d-none d-md-block pt-4 mt-5">Contactame!!</h1>
-      <Card className='border-primarymb-4'>
-      <Card.Body>
-         <ListGroup   className="list-group-flush justify-content-center">
-            <ListGroup.Item>
-               <Card.Link href='https://www.linkedin.com/in/sebastianprario/'>
-               <BsLinkedin size={50}color='#090909'/>
-               </Card.Link>
-            </ListGroup.Item>
-            <ListGroup.Item>
-               <Card.Link href='https://github.com/Sebastianprario/'>
-               <FaGithub size={50}color='#110d01'/>
-               </Card.Link>
-            </ListGroup.Item>
-            <ListGroup.Item> 
-            <div className="row justify-content-center">   
-            <div className="col-4 text-end">
-            <MdOutlineAlternateEmail size={40} color='#171010'/>
-            </div>
-            <div className="d-none d-md-flex fs-2 text-start col-8">
-               Sebastianprario@hotmail.com
-            </div>
-            <div className="d-flex d-md-none fs-4 text-start col-8">
-               Sebastianprario@hotmail.com
-            </div>
-            </div>
-            
-            </ListGroup.Item>             
-            </ListGroup>
-            </Card.Body>
-         </Card>
+   <div className="vh-100 pt-5 mt-5" id='contact'> 
+   <Contact/>
    </div>
    <div className="my-5">
      
    </div>
-    
+   
    </Container>
    )
 }
