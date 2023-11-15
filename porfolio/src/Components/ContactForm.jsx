@@ -2,6 +2,7 @@ import emailjs from "@emailjs/browser";
 import {  useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button'
 
 
 const ContactForm = () => {
@@ -86,6 +87,10 @@ const ContactForm = () => {
 					onChange={handleChange}
 					as="textarea" rows={3} />
 				</Form.Group>
+				<Button
+				type="submit"
+				className="mb-2 bg-secondary"
+				>enviar</Button>
 			</Form>
 			</div>
 		</div>
