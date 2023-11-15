@@ -30,11 +30,8 @@ const ContactForm = () => {
 		,"ukoeLgVK7aeMbSAeg" )
 			.then(() =>  alert("Gracias por contactarme !"))
 			.catch((error) => 	alert (error));
-						
-			setMensaje (
-				{last_name :"", first_name: "", message : "" , email: ""}
-			)
-	};
+		e.target.reset()			
+				};
 
 	return (
 		<div className="mx-auto col-8"
