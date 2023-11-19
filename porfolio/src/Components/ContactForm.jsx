@@ -53,31 +53,30 @@ const ContactForm = () => {
 			<div className="w-full flex justify-center">
 			<Form
 			onSubmit={sendEmail}>
-				<Form.Group className="col-6 mx-auto mb-3" controlId="firstname" name="from_name">
+				<Form.Group className="col-6 fs-4 mx-auto mb-3" controlId="firstname" name="from_name">
 					<Form.Label>Nombre</Form.Label>
 					<Form.Control 
 					type="text" 
 					name="first_name"
 					onChange={handleChange}/>
 				</Form.Group>
-				<Form.Group className="col-6 mx-auto mb-3" controlId="lastname" name="lastname">
+				<Form.Group className="col-6 mx-auto fs-4 mb-3" controlId="lastname" name="lastname">
 					<Form.Label>Apellido</Form.Label>
 					<Form.Control 
 					type="text"
 					name="last_name"
 					onChange={handleChange}/>
 				</Form.Group>
-				<Form.Group className="mb-3 mx-auto col-8" controlId="email">
+				<Form.Group className="mb-3 mx-auto fs-4 col-8" controlId="email">
 					<Form.Label>Email</Form.Label>
 					<Form.Control 
 					type="email"
 					name="email"
-					onChange={handleChange}
-					placeholder="nombre@ejemplo.com" />
+					onChange={handleChange} />
 				</Form.Group>
 
 				
-				<Form.Group className="pb-3 col-10 mx-auto " controlId="message" name="message">
+				<Form.Group className="pb-3 col-10 mx-auto fs-4" controlId="message" name="message">
 					<Form.Label>Mensaje</Form.Label>
 					<Form.Control 
 					name="message"

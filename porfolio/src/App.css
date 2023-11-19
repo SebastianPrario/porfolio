@@ -1,6 +1,8 @@
 #root {
   text-align: center;
-  background-color: rgb(20, 85, 177);
+  background-image:url(./assets/piedras.jpg);
+  background-repeat: repeat;
+
 }
 
 
@@ -131,7 +133,9 @@
 }
 
 .div-stack {
-  background-image: linear-gradient(to right, #916969, #2020d7)
+  border-color: #888;
+  border: 10px;
+  background-image: linear-gradient(to right, #e1e0e0, #c3be9b)
 
 }
 

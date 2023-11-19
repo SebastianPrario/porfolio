@@ -6,6 +6,7 @@ import About from "./About";
 import Stack from "./Stack";
 import Projects from "./Projects";
 import Hello from "./Hello"
+import SocialLinks from './SocialLinks';
 
 
 
@@ -26,6 +27,7 @@ function Home() {
          <div className='mt-5 bg-primary-10'>
             <Contact /> 
          </div>
+         <SocialLinks/>
          
       </Container>
    )
