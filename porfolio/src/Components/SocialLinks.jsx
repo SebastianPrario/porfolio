@@ -1,14 +1,14 @@
 import { Card , ListGroup} from "react-bootstrap"
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import zoom from './../assets/icons/zoom.png'
+
 
 
 function SocialLinks () {
    return (
-      <Card >
-         <Card.Body className="bg-primary">
-            <ListGroup   className="list-group-flush justify-content-center">
-               <ListGroup.Item>
+      <div  className="logo">
+         <div className="pb-4  border-black">
+            <ListGroup   >
+               <ListGroup.Item className="transparent">
                   <Card.Link href='https://www.linkedin.com/in/sebastianprario/'>
                   <BsLinkedin size={50}color='#090909'/>
                   </Card.Link>
@@ -30,11 +30,10 @@ function SocialLinks () {
                   Sebastianprario@hotmail.com
                </div>
                </div>
-               
                </ListGroup.Item>             
             </ListGroup>
-         </Card.Body>
-      </Card>
+         </div>
+      </div>
 
    )
 }

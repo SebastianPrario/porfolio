@@ -27,7 +27,10 @@ function Home() {
          <div className='mt-5 bg-primary-10'>
             <Contact /> 
          </div>
-         <SocialLinks/>
+         <div className='transparent'>
+             <SocialLinks/>
+         </div>
+        
          
       </Container>
    )

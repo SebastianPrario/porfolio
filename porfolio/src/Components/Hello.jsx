@@ -4,7 +4,7 @@ import imagen from './../assets/foto.jpg'
 
 function Hello () {
     return (
-        <div  className=' vh-100 justify-content-center'>
+        <div  className=' vh-100 justify-content-center div-stack'>
             <div className='col-12  '>
             <Card className="my-2">
                 <Card.Body>

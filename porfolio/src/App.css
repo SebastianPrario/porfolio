@@ -25,7 +25,9 @@
   background-size: cover;
 
 }
-
+.logo {
+  background-color: transparent;
+}
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
@@ -142,4 +144,7 @@
 .project {
   margin-top: 20px;
   overflow-y: hidden; /* Muestra el scroll vertical */
+}
+.transparent {
+  background-color: none;
 }
