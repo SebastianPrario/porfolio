@@ -1,11 +1,11 @@
-import ContactForm from "./../Components/ContactForm";
+import ContactForm from "./ContactForm";
 
 
 const Contact = () => {
 	return (
 	
 			<div>
-				<div className="mx-auto">
+				<div className="vh-100 mx-auto">
 					<ContactForm />
 				</div>
 			</div>
