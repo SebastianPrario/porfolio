@@ -1,13 +1,19 @@
 import ContactForm from "./ContactForm";
+import { useLocation } from 'react-router-dom';
 
+const Contact = () => {  
+const location = useLocation().pathname	
 
-const Contact = () => {
-	return (
+return (
 	
 			<div>
-				<div className="vh-100 mx-auto">
+				{ location=="/contact" ?
+				(<div className=" vh-100 pt-5 mx-auto">
 					<ContactForm />
-				</div>
+				</div>) :
+				(<div className=" mx-auto pt-5">
+				<ContactForm />
+				</div>)}
 			</div>
 		
 	);

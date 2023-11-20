@@ -18,13 +18,13 @@ function Home() {
        
          <Hello/>
          <Navs/>
-         <Card pt={3} >
+         <Card  >
              <About />
          </Card>
         
          <Stack/> 
          <Projects/>
-         <div className='pb-4 m-5 '>
+         <div >
             <Contact /> 
          </div>
          <SocialLinks/>

@@ -22,13 +22,11 @@ function ProjectsCard({ name , info, tecno , deploy , img }) {
             <div className='b-flex d-md-none col-12'>
                 <div className='row justify-content-center '>
                  
-                <img className='col-6'src={img} width={50} height={50}/>
+                <img className='col-6'src={img} width={30} height={30}/>
                 </div>
                 <h4 className="card-title">{name}</h4>
                 <p className="card-text">{info}</p>
-                <p className="card-text ">Tecnologías</p>
-                <p className="card-text">{tecno}</p>
-                <p className="card-text d-none d-md-block">Deploy</p>
+                <p className="card-text">Deploy</p>
                 <Card.Link href={deploy}>{deploy}</Card.Link>
             </div>
           </div>

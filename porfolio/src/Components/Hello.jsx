@@ -21,7 +21,7 @@ function Hello () {
 				</h2>
                 <h2
 					style={{ fontFamily: "Morganite Bold, sans-serif" }}
-					className="d-block d-lg-none pt-5 mt-4 display-3   "
+					className="d-block d-lg-none pt-5 mt-4 display-5   "
 				>	<Typewriter words={[greetingTitle]} loop={true} />
 					&nbsp;
 				</h2>  

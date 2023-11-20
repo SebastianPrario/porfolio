@@ -10,7 +10,7 @@ function Projects () {
     <h1 className="py-4">Mis Proyectos</h1> 
       <div className="fondo mx-auto" >
       <div >
-      <Carousel  className=" mx-2 mx-md-5 pb-5 my-0 my-md-auto " >
+      <Carousel  className="  mx-md-5 pb-5 my-0 my-md-auto " >
          {projects.map(p => (
          <Carousel.Item key={p.name}> 
          <ProjectsCard

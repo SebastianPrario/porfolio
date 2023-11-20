@@ -4,7 +4,7 @@ import {  aboutOne } from '../constants';
 export function About () {
     return (
         <div className='row bg-primary ' id="sobremi">
-            <div className='col-12 p-4'>
+            <div className='col-12 p-md-4'>
             <Card >
                 <div className="computadora " >
                 <Card.Body className='mx-auto col-12 col-xl-8'>
@@ -13,7 +13,7 @@ export function About () {
                     <Card.Text className='d-none d-md-flex fs-3  col-10   mx-auto'>
                     {aboutOne}
                     </Card.Text>
-                    <Card.Text className='d-flex d-md-none fs-12 mx-auto pt-0 mt-0'>
+                    <Card.Text className='d-flex d-md-none  pt-0 mt-0'>
                     {aboutOne}
                     </Card.Text>
                 </Card.Body>

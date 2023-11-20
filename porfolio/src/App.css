@@ -13,10 +13,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  @media (max-width: 576px) {
+  @media (max-width: 1000px) {
     margin: 0;
     background-image:url(./assets/marco.jpg);
-    width: 390px;
+    width: 300px;
+    padding: 0;
+    margin: 0;
     height: 370px;
     background-position: center;
     background-repeat: no-repeat;
@@ -145,6 +147,7 @@
 }
 
 .div-stack {
+  margin-top: 10px;
   border-color: #888;
   border: 10px;
   background-image: linear-gradient(to right, #e1e0e0, #c3be9b)
@@ -153,15 +156,14 @@
 
 .project {
   margin-top: 20px;
-  overflow-y: hidden; /* Muestra el scroll vertical */
+ 
 }
-.transparent {
-  background-color: none;
-}
+
 
 .hellofondo {
   background-color: #c3be9b;
   padding: 5%;
+  margin-bottom: 10px;
 }
 
 .projectCard {
@@ -171,11 +173,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (max-width: 576px) {
+  @media (max-width: 1000px) {
     margin-left: 0;
     padding-left: 0;
-    width: 420px;
-    margin: 0% ,20%,0%,0%;
+    width: 300px;
+    margin: 10% ,20%,0%,0%;
     height: 278px;
     margin-top: 13%;
     background-color: rgb(234, 220, 205);
