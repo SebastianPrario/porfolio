@@ -8,8 +8,9 @@ function Projects () {
     <div className='mt-4' > 
    
     <h1 className="py-4">Mis Proyectos</h1> 
-      <div className="fondo mx-auto" style={{height:"600px"}}>
-      <Carousel  className=" mx-5 my-auto " >
+      <div className="fondo mx-auto" >
+      <div >
+      <Carousel  className=" mx-2 mx-md-5 pb-5 my-0 my-md-auto " >
          {projects.map(p => (
          <Carousel.Item key={p.name}> 
          <ProjectsCard
@@ -22,7 +23,7 @@ function Projects () {
          </Carousel.Item>
          ))}
       </Carousel>
-   
+            </div>
       </div>
    </div>
     )

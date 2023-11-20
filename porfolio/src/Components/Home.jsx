@@ -15,23 +15,22 @@ function Home() {
 
    return (
       <Container id='home'>
+       
          <Hello/>
          <Navs/>
-       
-         <Card  style={{height:"1000px"}} className='my-5' >
-             <About style={{height:"400px"}}/>
+         <Card pt={3} >
+             <About />
          </Card>
         
          <Stack/> 
          <Projects/>
-         <div className='mt-5 bg-primary-10'>
+         <div className='pb-4 m-5 '>
             <Contact /> 
          </div>
-         <div>
-             <SocialLinks/>
-         </div>
+         <SocialLinks/>
+      
         
-         
+      
       </Container>
    )
 }

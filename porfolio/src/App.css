@@ -2,28 +2,36 @@
   text-align: center;
   background-image:url(./assets/piedras.jpg);
   background-repeat: repeat;
-
+ 
 }
-
 
 .fondo {
   background-image:url(./assets/marco.jpg);
   width: 800px;
-  height: 800px;
+  height: 570px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  
+  @media (max-width: 576px) {
+    background-image:url(./assets/marco.jpg);
+    width: 460px;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
-
+ 
 .computadora {
   background-image:url(./assets/compu.jpg);
   height: 800px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  @media (max-width: 1500px) {
+    height: 400px;
+    background-image:none;
+  }
 }
 .logo {
   background-color: transparent;
@@ -161,4 +169,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 576px) {
+    height: 300px;
+    margin-top: 11%;
+    background-color: rgb(234, 220, 205);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+      
+  }
+
 }

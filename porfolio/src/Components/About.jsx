@@ -7,10 +7,9 @@ export function About () {
             <div className='col-12 p-4'>
             <Card >
                 <div className="computadora " >
-                <Card.Body className='col-12  my-3'>
+                <Card.Body className='mx-auto col-12 col-xl-8'>
                     <Card.Title className='d-none d-md-flex p-0 display-6  col-4 mx-auto mt-3'>Sobre Mí</Card.Title>
-                    <Card.Title className='d-block d-md-none display-6  col-4 mx-auto mb-1'>Sobre Mí</Card.Title> 
-                   
+                    <Card.Title className='d-block d-md-none display-8  col-4 mx-auto mb-1'>Sobre Mí</Card.Title> 
                     <Card.Text className='d-none d-md-flex fs-3  col-10   mx-auto'>
                     {aboutOne}
                     </Card.Text>

@@ -27,7 +27,7 @@ function SocialLinks () {
                <div className="d-none d-md-flex fs-2 text-start col-8">
                   <b>Sebastianprario@hotmail.com</b>
                </div>
-               <div className="d-flex d-md-none fs-4 text-start col-8">
+               <div className="d-flex d-md-none fs-3 text-start col-9">
                  Sebastianprario@hotmail.com 
                </div>
                </div>

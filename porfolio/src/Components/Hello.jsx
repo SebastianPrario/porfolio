@@ -1,16 +1,31 @@
 import { greetingText, greetingTitle } from '../constants';
 import { Card , Image, Col, Row } from 'react-bootstrap';
 import imagen from './../assets/foto.jpg'
+import { Typewriter } from "react-simple-typewriter";
 
 function Hello () {
     return (
         <div  className='justify-content-center'>
             <div className='col-12'>
             <div className="hellofondo">
+            <div>
+				
+			</div>
                 <Card.Body>
-                    <Card.Title className='d-none d-md-block display-1'>{greetingTitle}</Card.Title>
-                    <Card.Title className='d-none d-sm-block d-md-none mt-4 display-6'>{greetingTitle}</Card.Title>
-                    <Card.Title className='d-block d-sm-none display-10 pt-5 mt-5'>{greetingTitle}</Card.Title>
+                   
+                <h2
+					style={{ fontFamily: "Morganite Bold, sans-serif" }}
+					className="d-none d-lg-block display-1"
+				>	<Typewriter words={[greetingTitle]} loop={true} />
+					&nbsp;
+				</h2>
+                <h2
+					style={{ fontFamily: "Morganite Bold, sans-serif" }}
+					className="d-block d-lg-none pt-5 mt-4 display-3   "
+				>	<Typewriter words={[greetingTitle]} loop={true} />
+					&nbsp;
+				</h2>  
+                                    
                     
                     <Row  className='d-none d-sm-flex align-items-center'>
                     <Col xs={7} >

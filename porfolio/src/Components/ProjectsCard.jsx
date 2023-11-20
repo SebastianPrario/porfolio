@@ -4,21 +4,33 @@ function ProjectsCard({ name , info, tecno , deploy , img }) {
 
     return (
         <div >
-        <div  className='projectCard' style={{height:"500px"}} >
-           <div className='row align-items-center py-4'>
-            <div className='col-6'>
-             <Card.Img className='d-flex d-md-none'src={img} height={150}/>
-             <Card.Img className='d-none d-md-flex'src={img} height={400}/>
-            </div>
-            <div className='col-6'>
+        <div  className='projectCard'  >
+           <div className='row align-items-center '>
+            <div className='d-none d-md-flex '>
+                <div className='col-5'>
+                <Card.Img className='d-none d-md-flex'src={img} height={450}/>
+                </div>
+                <div className='col-6 py-3 my-3'>
                 <h4 className="card-title">{name}</h4>
                 <p className="card-text">{info}</p>
-                <p className="card-text d-none d-md-block">Tecnologías</p>
+                <p className="card-text ">Tecnologías</p>
+                <p className="card-text">{tecno}</p>
+                <p className="card-text d-none d-md-block">Deploy</p>
+                <Card.Link href={deploy}>{deploy}</Card.Link>
+                </div>
+            </div>
+            <div className='b-flex d-md-none col-12'>
+                <div className='row justify-content-center '>
+                 
+                <img className='col-6'src={img} width={50} height={50}/>
+                </div>
+                <h4 className="card-title">{name}</h4>
+                <p className="card-text">{info}</p>
+                <p className="card-text ">Tecnologías</p>
                 <p className="card-text">{tecno}</p>
                 <p className="card-text d-none d-md-block">Deploy</p>
                 <Card.Link href={deploy}>{deploy}</Card.Link>
             </div>
-           
           </div>
         </div>
         </div>
