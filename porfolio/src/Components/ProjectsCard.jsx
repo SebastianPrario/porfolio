@@ -4,7 +4,7 @@ function ProjectsCard({ name , info, tecno , deploy , img }) {
 
     return (
         <div >
-        <Card  className='my-5 pb-4' style={{height:"500px"}} >
+        <div  className='projectCard' style={{height:"500px"}} >
            <div className='row align-items-center py-4'>
             <div className='col-6'>
              <Card.Img className='d-flex d-md-none'src={img} height={150}/>
@@ -20,7 +20,7 @@ function ProjectsCard({ name , info, tecno , deploy , img }) {
             </div>
            
           </div>
-        </Card>
+        </div>
         </div>
     )
 }

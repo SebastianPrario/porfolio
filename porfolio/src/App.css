@@ -148,3 +148,17 @@
 .transparent {
   background-color: none;
 }
+
+.hellofondo {
+  background-color: #c3be9b;
+  padding: 5%;
+}
+
+.projectCard {
+  margin-top: 7%;
+  padding: 1%;
+  background-color: rgb(234, 220, 205);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
