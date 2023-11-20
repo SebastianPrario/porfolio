@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function SocialLinks () {
    return (
       <div>
-         <div className="  border-black">
+         <div className="border-black">
             <ListGroup  >
                <div className="py-4">
                   <Card.Link href='https://www.linkedin.com/in/sebastianprario/'>
