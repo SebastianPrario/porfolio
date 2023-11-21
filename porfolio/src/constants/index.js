@@ -17,7 +17,7 @@ import postmanImg from'./../assets/icons/postman-icon.png'
 
 
 export const greetingTitle = 'Hola! Soy Sebastián';
-export const greetingText = 'Bienvenid@ a mi Portfolio! Mi nombre es Sebastián Prario y soy Desarrollador Full Stack. Aqui podrás conocer un poco de mi' 
+export const greetingText = 'Bienvenid@ a mi Porfolio! Mi nombre es Sebastián Prario y soy Desarrollador Full Stack. Aqui podrás conocer un poco de mi' 
 
 export const aboutTitle = 'Sobre Mí';
 
