@@ -1,7 +1,5 @@
 import { technicalSkills } from '../constants'
 
-
-
 function Stack () {
    
    return (

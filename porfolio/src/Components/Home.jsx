@@ -6,12 +6,12 @@ import Stack from "./Stack";
 import Projects from "./Projects";
 import Hello from "./Hello"
 import SocialLinks from './SocialLinks';
-import cartel from '../assets/apple.png'
+import cartel from '../assets/apple.jpg'
 import river from '../assets/river.jpg'
 import cartel2 from '../assets/cartel2.png'
 import talent from '../assets/talent.png'
 import soda from '../assets/soda.jpg'
-import bici from '../assets/bici.jpeg'
+import bici from '../assets/bici.png'
 
 function Home() {
 
@@ -22,7 +22,7 @@ function Home() {
          <Navs/>
          {/* componente about */}
          <Row>  
-            <Col className='d-none d-md-flex col-3 '>
+            <Col className='d-none d-md-flex col-lg-2'>
                <Row className=' d-none d-md-flex py-4 my-4 align-content-start'>
                <Image  rounded className="mx-auto my-2 "style={{height:"300px", width:"300px"}}
                   src={soda} alt='foto' />
@@ -30,7 +30,7 @@ function Home() {
                   src={bici} alt='foto' />
                </Row>
             </Col>
-            <Col>
+            <Col >
                <About />
             </Col>   
          </Row>
@@ -40,7 +40,7 @@ function Home() {
          <Row>
             <Col className='d-none d-md-flex col-3'>
                <Row className=' d-none d-md-flex py-4 my-4'>
-               <Image  roundedCircle className="mx-auto my-2 "style={{height:"200px", width:"200px"}}
+               <Image  roundedCircle className="mx-auto my-2 "style={{height:"200px", width:"220px"}}
                   src={cartel} alt='foto' />
                   <Image  className="mx-auto my-4 "style={{height:"200px", width:"400px"}}
                   src={talent} alt='foto' />
