@@ -5,7 +5,7 @@ import {  aboutOne } from '../constants';
 export function About () {
     return (
      
-            <div className="computadora mx-auto" >
+            <div className="computadora mx-auto pb-4" >
                   <div className="col-12 px-4 col-md-12 pt-4 ">
                     <div className='d-none d-md-flex display-5  col-4 mt-4 pt-4 mx-auto'>Sobre Mí</div>
                     <div className='d-block d-md-none display-5 pt-4  mb-4'>Sobre Mí</div> 

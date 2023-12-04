@@ -11,9 +11,11 @@ import river from '../assets/river.jpg'
 import cartel2 from '../assets/cartel2.png'
 import talent from '../assets/talent.png'
 import soda from '../assets/soda.jpg'
-import bici from '../assets/bici.png'
+import bici from '../assets/bici.png';
+import { useParallax } from 'react-scroll-parallax';
 
 function Home() {
+
 
    return (
       <Container id='home'>

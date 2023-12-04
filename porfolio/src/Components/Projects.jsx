@@ -8,7 +8,7 @@ function Projects () {
     <div className='mt-4' > 
    
     <h1 className="py-4">Mis Proyectos</h1> 
-      <div className="fondo mx-auto" >
+      <div className="fondo mx-3" >
       <div >
       <Carousel  className="  mx-md-5 pb-5 my-0 my-md-auto " >
          {projects.map(p => (
