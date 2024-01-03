@@ -10,7 +10,7 @@ function ProjectsCard( { name , info, tecno , deploy , img }) {
                 <div className='col-5'>
                 <Card.Img className='d-none d-lg-flex'src={img} height={450}/>
                 </div>
-                <div className='col-6 py-3 my-3'>
+                <div className='col-6 py-3 my-5 ms-4'>
                 <h4 className="card-title">{name}</h4>
                 <p className="card-text">{info}</p>
                 <p className="card-text ">Tecnologías</p>

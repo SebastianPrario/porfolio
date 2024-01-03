@@ -13,11 +13,12 @@ import nodejsImg from './../assets/icons/nodejs.icon.png'
 import sequelizeImg from './../assets/icons/sequelize-icon.png'
 import expressImg from './../assets/icons/express-icon.png'
 import postmanImg from'./../assets/icons/postman-icon.png'
+import memo from '../assets/memo.jpg'
 
 
 
 export const greetingTitle = 'Hola! Soy Sebastián';
-export const greetingText = 'Bienvenid@ a mi Porfolio! Mi nombre es Sebastián Prario y soy Desarrollador Full Stack. Aqui podrás conocer un poco de mi' 
+export const greetingText = 'Bienvenid@ a mi Porfolio! Mi nombre es Sebastián y soy Desarrollador Full Stack. Aqui podrás conocerme un poco + ' 
 
 export const aboutTitle = 'Sobre Mí';
 
@@ -26,8 +27,10 @@ export const aboutOne = `Soy un entusiasta de la tecnología que siempre busca a
 export const projects = [
     {name:'Bon Appetit' , info:'Trabajo final grupal que permite a los clientes pedir a través de una app comidas en un restaurante.', tecno: 'React , Redux , Express , Sequelize , PostgreSQL , FireBase, MercadoPago , Cloudinary',  img:bon , deploy: '//bonappetite.vercel.app/'},
     {name:'Qué comemos hoy?', info:'Esta aplicación de recetas permite busquedas combinadas y crear recetas nuevas.', tecno:'React , Redux , Express , Sequelize , PostgreSQL , Axios' ,  img: food, deploy:'//pi-food-pi-hazel.vercel.app/'},
-    {name:'Rick and Morty' , info: 'Este proyecto toma la información de una api.Tambien permite logearse y guardar en favoritos.' ,tecno:'React , Redux , Axios, CSS' , img: rick, deploy: '//rick-and-morty-ottv-e5cmo13pr-sebastianprario.vercel.app'}
-]
+    {name:'Rick and Morty' , info: 'Este proyecto toma la información de una api externa.Permite logearse y guardar en favoritos.' ,tecno:'React , Redux , Axios, CSS' , img: rick, deploy: '//rick-and-morty-ottv-e5cmo13pr-sebastianprario.vercel.app'},
+    {name:'Memotest' , info: 'Es este juego hay que encontrar las coincidencias.Tiene categorías preestablecidas o puedes crear la tuya.' ,tecno:'React , Cloudinary , Axios, CSS' , img: memo, deploy: '//https://memotest2024.vercel.app/'}
+
+   ]
 
 export const technicalSkills = [
     {
