@@ -2,7 +2,7 @@ import { greetingText, greetingTitle } from '../../constants';
 import { Card , Image, Col, Row } from 'react-bootstrap';
 import imagen from '../../assets/foto.jpg'
 import { Typewriter } from "react-simple-typewriter";
-import styles from './hello.module.css'
+import styles from './Hello.module.css'
 
 function Hello () {
   
