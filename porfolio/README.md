@@ -1,9 +1,26 @@
-dir
-# React + Vite
+# Porfolio de Sebastian Prario
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hola, soy Sebastian y este es mi porfolio. 
 
-Currently, two official plugins are available:
+deploy: sebastianprario.com.ar
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Comentarios Generales
+
+Esta aplicación ha sido desarrollada con el siguiente Stack:
+- React v18
+- Bootstrap v5
+- React Boostrap
+- Vite
+
+
+## Instalación
+
+Instala la aplicación con el siguiente comando:
+
+git clone https://github.com/SebastianPrario/porfolio.git
+cd portfolio
+npm install
+npm run dev
+
+
+Sebastian Prario - Porfolio 2023
