@@ -1,0 +1,86 @@
+
+.hardSkills__container {
+    padding-top: 60px;
+    padding-inline: 10px;
+    background: var(--background-white);
+}
+  
+.hardSkills__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+  
+.hardSkills__dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+  
+.hardSkills__itemcontainer {
+    width: 140px;
+    border: 2px solid lightblue;
+    margin: 5px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+  
+.hardSkills__itemcontainer:hover {
+    border:1px solid blue;
+    box-shadow: 4px 4px 4px #CCC;
+    transform: scale(1.1);
+}
+  
+.hardSkills__itemimage {
+    width: 70px;
+}
+  
+.hardSkills__itemtitle {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0;
+    padding-top: 5px;
+    font-weight: bold;
+}
+  
+@media screen and (min-width: 768px) {
+  
+    .hardSkills__container {
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        align-items: center;
+    }
+  
+    .hardSkills__containerdata {
+        width: 85vw;
+    }
+  
+}
+  
+@media screen and (min-width: 1024px) {
+  
+    .hardSkills__containerdata {
+        width: 75vw;
+    }
+  
+    .hardSkills__container {
+        align-items: center;
+        height: 100vh;
+    }
+  
+}
+  
+.divStack {
+    
+    margin-top: 10px;
+    border-color: #888;
+    border: 10px;
+    background-image: linear-gradient(to right, #e1e0e0, #c3be9b)
+  
+}
+  

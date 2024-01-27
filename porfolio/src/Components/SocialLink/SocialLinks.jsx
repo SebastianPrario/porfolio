@@ -3,10 +3,10 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 function SocialLinks () {
    return (
-      <div>
-         <div className="border-black">
+      <div >
+         <div className="border-black pb-4">
             <ListGroup  >
-               <div className="py-4">
+               <div className="pb-4">
                   <Card.Link href='https://www.linkedin.com/in/sebastianprario/'>
                   <BsLinkedin size={50}color='#090909'/>
                   </Card.Link>
@@ -25,7 +25,7 @@ function SocialLinks () {
                         <b>Sebastianprario@hotmail.com</b>
                      </div>
                      <div className="d-flex d-md-none fs-3 text-start col-9">
-                           Sebastianprario@hotmail.com 
+                     |  <b>Sebastianprario@hotmail.com</b>
                      </div>
                   </div>
                </div>             

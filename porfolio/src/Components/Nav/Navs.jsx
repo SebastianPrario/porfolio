@@ -2,7 +2,7 @@ import Nav from 'react-bootstrap/Nav';
 import { Button } from 'react-bootstrap';
 import { Link as ScrollLink } from 'react-scroll';
 import { Link as RouterLink } from 'react-router-dom';
-import Pdf from "./../assets/CV - Sebastian Prario.pdf";
+import Pdf from './../../assets/CV.pdf'
 import { useLocation } from 'react-router-dom';
 
 function Navs () {

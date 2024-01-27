@@ -1,4 +1,4 @@
-import ContactForm from "./ContactForm";
+import ContactForm from "../ContactForm/ContactForm";
 import { useLocation } from 'react-router-dom';
 
 const Contact = () => {  

@@ -1,0 +1,21 @@
+.divAbout {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    background-image:url(../../assets/marco2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 700px;
+    height: 100vh ;
+       
+     @media (max-width: 800px) {
+      height: 550px;
+      width: 440px;
+      margin-top: 1%;
+      
+     
+    }
+  }
