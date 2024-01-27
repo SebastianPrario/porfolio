@@ -23,7 +23,7 @@ function Home() {
          {/* componente about */}
          <Row>  
             <Col className='d-none d-md-flex col-lg-2'>
-               <Row className=' d-none d-md-flex py-4 my-4 align-content-start'>
+               <Row className=' d-none d-lg-flex py-4 my-4 align-content-start'>
                <Image  rounded className="mx-auto my-2 "style={{height:"300px", width:"300px"}}
                   src={soda} alt='foto' />
                   <Image  roundedCircle className="mt-4 pt-4"style={{height:"340px", width:"380px"}}
