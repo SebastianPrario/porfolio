@@ -19,7 +19,7 @@ function Hello () {
 				</h2>  
                      <Row  className='d-none d-sm-flex pt-2 align-items-start'>
                     <Col xs={7} >
-                    <Card.Text className=' d-none d-md-flex pt-2 display-6'>
+                    <Card.Text className=' d-none d-md-flex mt-4 pt-5 display-6'>
                         {greetingText}
                     </Card.Text>
                     <Card.Text className='my-3 d-flex d-md-none display-6'>

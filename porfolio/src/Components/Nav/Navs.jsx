@@ -15,34 +15,34 @@ const location = useLocation().pathname
 
    return (
 
-      <Nav className='d-md-flex fixed-top   justify-content-center bg-secondary' 
+      <Nav className='d-md-flex fixed-top text-decoration-none justify-content-center bg-secondary' 
          activeKey="/"
          onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}>
          <Nav.Item >
-            <Nav.Link>
+            <Nav.Link >
               { location=="/" ?
-              (<ScrollLink to="home" className="text-white">Inicio</ScrollLink>):
-              ( <RouterLink to="/" className="text-white">Inicio</RouterLink>)}
+              (<ScrollLink to="home" className="text-white text-decoration-none">Inicio</ScrollLink>):
+              ( <RouterLink to="/" className="text-white text-decoration-none">Inicio</RouterLink>)}
             </Nav.Link>
          </Nav.Item>
          <Nav.Item>
             <Nav.Link>
-               <RouterLink to="/about#sobremi"className="text-white">Sobre Mí</RouterLink>
+               <RouterLink to="/about#sobremi"className="text-white text-decoration-none">Sobre Mí</RouterLink>
             </Nav.Link>
          </Nav.Item>
          <Nav.Item>
             <Nav.Link>
-            <RouterLink to="stack"className="text-white">Tecnologías</RouterLink>
+            <RouterLink to="stack"className="text-white text-decoration-none">Tecnologías</RouterLink>
                </Nav.Link>
          </Nav.Item>
          <Nav.Item>
             <Nav.Link>
-               <RouterLink to="projects"className="text-white">Proyectos</RouterLink>
+               <RouterLink to="projects"className="text-white text-decoration-none">Proyectos</RouterLink>
             </Nav.Link>
          </Nav.Item>
          <Nav.Item>
             <Nav.Link>
-               <RouterLink to="contact"className="text-danger">Contactame</RouterLink>
+               <RouterLink to="contact"className="text-danger text-decoration-none">Contactame</RouterLink>
             </Nav.Link>
          </Nav.Item>
          
@@ -51,7 +51,6 @@ const location = useLocation().pathname
             className='offset-1 bg-dark px-4 py-1' >
                Mi CV
             </Button>
-        
       </Nav>
    )
 }

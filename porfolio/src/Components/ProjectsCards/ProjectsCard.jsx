@@ -1,11 +1,12 @@
 import { Card } from 'react-bootstrap';
+import styles from './ProjectsCard.module.css'
 
 function ProjectsCard( { name , info, tecno , deploy , img }) {
 
     return (
         <div >
-            <div  className='projectCard'  >
-                <div className='row align-items-center'>
+            <div  className={styles.projectsCard}  >
+                <div className='row px-4 align-items-center'>
                     <div className='d-none d-lg-flex '>
                         <div className='col-5'>
                         <Card.Img className='d-none my-auto d-lg-flex'src={img} height={370}/>

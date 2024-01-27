@@ -51,11 +51,7 @@ function Home() {
                   src={river} alt='foto' />
             </Col>
            </Row> 
-           <Row className='ms-4'>
-            <Col >
-               <Projects/>
-            </Col>   
-         </Row>
+           <Projects/>
          {/* componente Contact */}  
          <Row>
             <Col className='d-none d-md-flex' >

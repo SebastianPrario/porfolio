@@ -31,27 +31,10 @@
 } */
 
 .madera {
-  height: 700px;
+  margin-top: 5%;
+  height: 600px;
   width: 100%;
   background-color: antiquewhite;
   border: 10px solid black;
 }
   
-.carousel {
-
- 
-  margin-left: 10%;
-  padding-top: 10%;
- 
-}
-
-.projectCard {
-    
-
-    background-color: rgb(234, 220, 205);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-  
-}
