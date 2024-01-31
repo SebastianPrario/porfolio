@@ -28,7 +28,7 @@ export const projects = [
     {name:'Bon Appetit' , info:'Trabajo final grupal que permite a los clientes pedir a través de una app comidas en un restaurante.', tecno: 'React , Redux , Express , Sequelize , PostgreSQL , FireBase, MercadoPago , Cloudinary',  img:bon , deploy: '//bonappetite.vercel.app/'},
     {name:'Qué comemos hoy?', info:'Esta aplicación de recetas permite busquedas combinadas y crear recetas nuevas.', tecno:'React , Redux , Express , Sequelize , PostgreSQL , Axios' ,  img: food, deploy:'//pi-food-pi-hazel.vercel.app/'},
     {name:'Rick and Morty' , info: 'Este proyecto toma la información de una api externa.Permite logearse y guardar en favoritos.' ,tecno:'React , Redux , Axios, CSS' , img: rick, deploy: '//rick-and-morty-ottv-e5cmo13pr-sebastianprario.vercel.app'},
-    {name:'Memotest' , info: 'Es este juego hay que encontrar las coincidencias.Tiene categorías preestablecidas o puedes crear la tuya.' ,tecno:'React , Cloudinary , Axios, CSS' , img: memo, deploy: '//https://memotest2024.vercel.app/'}
+    {name:'Memotest' , info: 'Es este juego hay que encontrar las coincidencias.Tiene categorías preestablecidas o puedes crear la tuya.' ,tecno:'React , Cloudinary , Axios, CSS' , img: memo, deploy: '//memotest2024.vercel.app/'}
 
    ]
 
