@@ -1,6 +1,5 @@
 import bon from './../assets/bon.png'
 import food from './../assets/fodd.png'
-import rick from './../assets/rick.png'
 import bootstrapImg from './../assets/icons/bootstrap.icon.png'
 import githubImg from './../assets/icons/github-icon.png'
 import htmlImg from './../assets/icons/html5-icon.png'
@@ -14,8 +13,10 @@ import sequelizeImg from './../assets/icons/sequelize-icon.png'
 import expressImg from './../assets/icons/express-icon.png'
 import postmanImg from'./../assets/icons/postman-icon.png'
 import memo from '../assets/memo.jpg'
+import rick from '../assets/RickandMorty.jpeg'
 import lasnoticias from '../assets/lasnoticiasya.jpeg'
-
+import graphQL from '../assets/icons/graphQL.png'
+import docker from '../assets/icons/docker.png'
 
 
 export const greetingTitle = 'Hola! Soy Sebastián';
@@ -29,7 +30,8 @@ export const projects = [
     {name:'Bon Appetit' , info:'Trabajo final grupal que permite a los clientes pedir a través de una app comidas en un restaurante.', tecno: 'React , Redux , Express , Sequelize , PostgreSQL , FireBase, MercadoPago , Cloudinary',  img:bon , deploy: '//bonappetite.vercel.app/'},
     {name:'Qué comemos hoy?', info:'Esta aplicación de recetas permite busquedas combinadas y crear recetas nuevas.', tecno:'React , Redux , Express , Sequelize , PostgreSQL , Axios' ,  img: food, deploy:'//pi-food-pi-hazel.vercel.app/'},
     {name:'Memotest' , info: 'Es este juego hay que encontrar las coincidencias.Tiene categorías preestablecidas o puedes crear la tuya.' ,tecno:'React , Cloudinary , Axios, CSS' , img: memo, deploy: '//memotest2024.vercel.app/'},
-    {name:'Las Noticias Ya!' , info: 'Esta aplicación surgió con el fin de poder ver en una única página varias noticias de diferentes portales utilizando el servicio de RSS. Consiste en dividir la pantalla en tres partes, en donde cada parte tendrá información diferente.',tecno:'React , Express , Axios, Bootstrap ' , img: lasnoticias, deploy: 'https://www.lasnoticiasya.com.ar/'}
+    {name:'Las Noticias Ya!' , info: 'Esta aplicación surgió con el fin de poder ver en una única página varias noticias de diferentes portales utilizando el servicio de RSS. Consiste en dividir la pantalla en tres partes, en donde cada parte tendrá información diferente.',tecno:'React , Express , Axios, Bootstrap ' , img: lasnoticias, deploy: 'https://www.lasnoticiasya.com.ar/'},
+    {name:'Rick and Morty' , info: 'Esta aplicación utiliza el lenguaje de consulta GraphQL para realizar busquedas en una api y mostrar los personajes de la serie',tecno:'React , GraphQL , Styled Component , Apolo Client ' , img: rick , deploy: 'https://rickandmorty-bysebastian.vercel.app/'}
    ]
 
 export const technicalSkills = [
@@ -81,5 +83,15 @@ export const technicalSkills = [
        id:12,
        skill:'PostMan',
        image: postmanImg,
-    }
+    },
+    {
+      id:13,
+      skill:'GraphQL',
+      image: graphQL,
+   },
+   {
+      id:14,
+      skill:'Docker',
+      image: docker,
+   }
 ]
