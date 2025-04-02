@@ -12,7 +12,6 @@ import cartel2 from '../../assets/cartel2.png'
 import talent from '../../assets/talent.png'
 import soda from '../../assets/soda.jpg'
 import bici from '../../assets/bici.png';
-import styles from './Home.module.css'
 
 
 function Home() {
