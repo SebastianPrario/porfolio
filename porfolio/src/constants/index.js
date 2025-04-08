@@ -19,7 +19,7 @@ import graphQL from '../assets/icons/graphQL.png'
 import docker from '../assets/icons/docker.png'
 import gcheq from '../assets/gcheq1.jpg'
 export const greetingText = 'Bienvenid@ a mi Porfolio! Mi nombre es Sebastián y soy Desarrollador Full Stack. Aqui podrás conocerme un poco + ' 
-
+export const greetingTitle = 'Hola Soy Sebastián!!
 export const aboutTitle = 'Sobre Mí';
 
 export const aboutOne = `Soy un entusiasta de la tecnología que siempre busca aprender y crear. Desde que tuve mi primera computadora, me fascinó el mundo digital y sus posibilidades. Aunque estudié contabilidad y administración de empresas, nunca dejé de lado mi pasión por la programación. Gracias a internet, pude estudiar desde mi hogar, lo que me permitió formarme como desarrollador web. Ahora, quiero compartir mis conocimientos y habilidades con el mundo. Sé que este es solo el primer paso de un camino lleno de desafíos y oportunidades.`
