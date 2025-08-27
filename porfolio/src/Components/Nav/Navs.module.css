@@ -1,0 +1,64 @@
+.neonNav {
+    background: rgba(0, 0, 0, 0.9) !important;
+    padding: 0.2rem !important;  /* reduced from 1rem */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.neonToggle {
+    background: rrgba(209, 174, 174, 0.9)!important;
+    border-color: #fff !important;
+    background: transparent !important;
+}
+
+.neonToggle:hover {
+    border-color: #0ff !important;
+    box-shadow: 0 0 5px #0ff;
+}
+
+.neonLink {
+    text-align: center;
+    margin: 0.25rem 0.75rem;  /* reduced margins */
+}
+
+.neonText {
+    color: #fff !important;
+    text-decoration: none !important;
+    font-size: 1rem;  /* reduced from 1.2rem */
+    padding: 0.25rem 0.75rem;  /* reduced padding */
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.neonText:hover {
+    color: #0ff !important;
+    text-shadow: 0 0 5px #0ff,
+                 0 0 25px #0ff,
+                 0 0 50px #0ff;
+}
+
+.neonButton {
+    background: transparent !important;
+    border: 2px solid #fff !important;
+    color: #fff !important;
+    padding: 0.25rem 1rem;  /* reduced padding */
+    font-size: 0.9rem;  /* slightly smaller font */
+    transition: all 0.3s ease;
+}
+
+.neonButton:hover {
+    border-color: #f09 !important;
+    color: #f09 !important;
+    box-shadow: 0 0 5px #f09,
+                0 0 25px #f09;
+}
+
+@media (max-width: 768px) {
+    .neonLink {
+        margin: 0.5rem 0;
+    }
+    
+    .neonText {
+        width: 100%;
+        text-align: center;
+    }
+}

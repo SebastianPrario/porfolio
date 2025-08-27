@@ -12,14 +12,8 @@ function App() {
   
   return (
     <div>
-      <Navs/>
-      <Routes>
-      <Route path='/' element={<Home/> }/>
-      <Route path='/about' element={<About/> }/>
-      <Route path='/stack' element={<Stack/> }/>
-      <Route path='/projects' element={<Projects/> }/>
-      <Route path='/contact' element={<Contact/> }/>
-        </Routes>
+    <Navs/>
+    <Home/> 
     </div>
   )
 }

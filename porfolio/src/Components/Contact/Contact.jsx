@@ -6,7 +6,7 @@ const location = useLocation().pathname
 
 return (
 	
-			<div>
+			<div id="contact" className="container" >
 				{ location=="/contact" ?
 				(<div className=" vh-100 pt-5 mx-auto">
 					<ContactForm />

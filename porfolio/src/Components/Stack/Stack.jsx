@@ -4,7 +4,7 @@ import styles from './Stack.module.css'
 function Stack () {
    
    return (
-     <div className={styles.divStack}>
+     <div id="stack" className={styles.divStack}>
       <section id='hardSkills' className={styles.hardSkills__container}>
           <div className={styles.hardSkills__containerdata}>
               <h1 className='display-1 mt-0 mb-5 text-bold'>Habilidades Técnicas</h1>

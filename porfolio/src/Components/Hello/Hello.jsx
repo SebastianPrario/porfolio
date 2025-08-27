@@ -7,7 +7,7 @@ import styles from './Hello.module.css'
 function Hello () {
   
     return (
-        <div className={styles.helloDiv}>
+        <div id="hello" className={styles.helloDiv}>
         	<div className='mx-3'>
                 <h2	className="d-none d-lg-block display-1">
                     <Typewriter words={[greetingTitle]} loop={true} />
