@@ -1,86 +1,103 @@
+.divStack {
+    /* 1. Estilo de la "pared" de fondo */
+    background-color: #e0e0e0; /* Un color de pared neutro */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23cccccc' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    padding: 8rem 2rem; /* Más padding para que el marco se vea "colgado" */
+    position: relative;
+    width: 100%;
+    height: 150%;
+   
+}
 
 .hardSkills__container {
-    padding-top: 60px;
-    padding-inline: 10px;
-    background: var(--background-white);
-}
-  
-.hardSkills__title {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-  
-.hardSkills__dashboard {
+    /* 2. Estilo del "marco del cuadro" */
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    max-width: 1200px; /* Ajustado para un ancho máximo razonable */
+    margin: 0 auto; /* Centra el cuadro en la pared */
+    background: #fdf6e3; /* Color del paspartú (el cartón interior) */
+    color: #333; /* Color de texto oscuro para que contraste con el fondo claro */
+    border: 30px solid #5d4037; /* Borde de madera oscuro */
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.4), inset 0 0 30px rgba(0, 0, 0, 0.2);
+   
 }
-  
+
+.hardSkills__container:hover {
+    transform: rotate(0deg) scale(1.02); /* Efecto al pasar el ratón por encima */
+}
+
+.hardSkills__containerdata {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+   
+}
+
+/* --- ESTILOS DEL CARRUSEL --- */
+
+.marqueeContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Espacio entre las dos filas del carrusel */
+    width: 100%;
+}
+
+.marquee {
+    position: relative;
+    width: 100%; /* Ocupa el ancho del contenedor del marco */
+    height: 100px; /* Altura de cada fila del carrusel */
+    overflow-x: hidden;
+}
+
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 40s linear infinite;
+    display: flex;
+    gap: 2rem; /* Espacio entre los logos */
+}
+
+.trackReverse {
+    animation-name: marqueeReverse;
+}
+
+/* Pausar la animación al pasar el ratón por encima */
+.track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes marqueeReverse {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
 .hardSkills__itemcontainer {
-    width: 140px;
-    border: 2px solid lightblue;
-    margin: 5px;
-    height: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: 1s;
+    width: 80px; /* Ancho fijo para cada habilidad */
 }
-  
-.hardSkills__itemcontainer:hover {
-    border:1px solid blue;
-    box-shadow: 4px 4px 4px #CCC;
-    transform: scale(1.1);
-}
-  
+
 .hardSkills__itemimage {
-    width: 70px;
+    height: 50px; /* Altura reducida para la imagen */
+    width: auto;
+    object-fit: contain;
 }
-  
+
 .hardSkills__itemtitle {
-    font-size: 0.8rem;
+    font-size: 0.75rem; /* Tamaño de fuente reducido para el título */
+    margin-top: 0.5rem;
     text-align: center;
-    margin: 0;
-    padding-top: 5px;
-    font-weight: bold;
 }
-  
-@media screen and (min-width: 768px) {
-  
-    .hardSkills__container {
-        display: flex;
-        justify-content: center;
-        min-height: 100vh;
-        align-items: center;
-    }
-  
-    .hardSkills__containerdata {
-        width: 85vw;
-    }
-  
-}
-  
-@media screen and (min-width: 1024px) {
-  
-    .hardSkills__containerdata {
-        width: 75vw;
-    }
-  
-    .hardSkills__container {
-        align-items: center;
-        height: 100vh;
-    }
-  
-}
-  
-.divStack {
-    
-    margin-top: 10px;
-    border-color: #888;
-    border: 10px;
-    background-image: linear-gradient(to right, #e1e0e0, #c3be9b)
-  
-}
-  
