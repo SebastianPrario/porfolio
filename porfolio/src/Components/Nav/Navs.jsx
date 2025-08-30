@@ -2,14 +2,12 @@ import { useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import { Button, Navbar } from 'react-bootstrap';
 import { Link as ScrollLink } from 'react-scroll';
-import { Link as RouterLink } from 'react-router-dom';
 import Pdf from './../../assets/CV.pdf'
-import { useLocation } from 'react-router-dom';
 import styles from './Navs.module.css';
 
 function Navs () {
     const [expanded, setExpanded] = useState(false);
-    const location = useLocation().pathname
+   
 
     const onResumeClick = () => {
         window.open(Pdf);
@@ -26,10 +24,8 @@ function Navs () {
                 <Nav className="justify-content-center w-100">
                     <Nav.Item >
                         <Nav.Link className={styles.neonLink}>
-                          { location=="/" ?
-                          (<ScrollLink to="home" spy={true} smooth={true} offset={-70} duration={100} 
-                            className={styles.neonText}>Inicio</ScrollLink>):
-                          ( <RouterLink to="/" className={styles.neonText}>Inicio</RouterLink>)}
+                          <ScrollLink to="home" spy={true} smooth={true} offset={-70} duration={100} 
+                              className={styles.neonText}>Inicio</ScrollLink>
                         </Nav.Link>
                      </Nav.Item>
                      <Nav.Item>
