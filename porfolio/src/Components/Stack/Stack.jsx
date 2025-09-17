@@ -2,7 +2,7 @@ import { technicalSkills } from '../../constants'
 import styles from './Stack.module.css'
 
 function Stack () {
-    // Dividimos el array de habilidades en dos para las dos filas del carrusel
+
     const half = Math.ceil(technicalSkills.length / 2);
     const firstHalf = technicalSkills.slice(0, half);
     const secondHalf = technicalSkills.slice(half);
@@ -11,7 +11,7 @@ function Stack () {
      <div id="stack" className={styles.divStack}>
       <section className={styles.hardSkills__container}>
           <div>
-              <h1 className='display-1 mt-0 mb-5 text-bold'>Habilidades Técnicas</h1>
+              <h1 className='display-3 mt-0 mb-5 text-bold'>Habilidades Técnicas</h1>
 
               {/* Fila Superior: Izquierda a Derecha */}
               <div className={styles.marquee}>
