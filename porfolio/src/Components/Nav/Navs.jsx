@@ -1,58 +1,66 @@
+import { useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
-import { Button } from 'react-bootstrap';
+import { Button, Navbar } from 'react-bootstrap';
 import { Link as ScrollLink } from 'react-scroll';
-import { Link as RouterLink } from 'react-router-dom';
 import Pdf from './../../assets/CV.pdf'
-import { useLocation } from 'react-router-dom';
+import styles from './Navs.module.css';
 
 function Navs () {
-    
-const location = useLocation().pathname
+    const [expanded, setExpanded] = useState(false);
+   
 
-  const onResumeClick = () => {
-   window.open(Pdf);
- };
+    const onResumeClick = () => {
+        window.open(Pdf);
+    };
 
-   return (
-
-      <Nav className='d-md-flex fixed-top text-decoration-none justify-content-center bg-secondary' 
-         activeKey="/"
-         onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}>
-         <Nav.Item >
-            <Nav.Link >
-              { location=="/" ?
-              (<ScrollLink to="home" className="text-white text-decoration-none">Inicio</ScrollLink>):
-              ( <RouterLink to="/" className="text-white text-decoration-none">Inicio</RouterLink>)}
-            </Nav.Link>
-         </Nav.Item>
-         <Nav.Item>
-            <Nav.Link>
-               <RouterLink to="/about#sobremi"className="text-white text-decoration-none">Sobre Mí</RouterLink>
-            </Nav.Link>
-         </Nav.Item>
-         <Nav.Item>
-            <Nav.Link>
-            <RouterLink to="stack"className="text-white text-decoration-none">Tecnologías</RouterLink>
-               </Nav.Link>
-         </Nav.Item>
-         <Nav.Item>
-            <Nav.Link>
-               <RouterLink to="projects"className="text-white text-decoration-none">Proyectos</RouterLink>
-            </Nav.Link>
-         </Nav.Item>
-         <Nav.Item>
-            <Nav.Link>
-               <RouterLink to="contact"className="text-danger text-decoration-none">Contactame</RouterLink>
-            </Nav.Link>
-         </Nav.Item>
-         
-            <Button 
-            onClick={onResumeClick}
-            className='offset-1 bg-dark px-4 py-1' >
-               Mi CV
-            </Button>
-      </Nav>
-   )
+    return (
+        <Navbar expanded={expanded} expand="md" className={`${styles.neonNav} fixed-top`}>
+            <Navbar.Toggle 
+                aria-controls="responsive-navbar-nav" 
+                onClick={() => setExpanded(expanded ? false : "expanded")}
+                className='btn btn-secondary'
+            />
+            <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="justify-content-center w-100">
+                    <Nav.Item >
+                        <Nav.Link className={styles.neonLink}>
+                          <ScrollLink to="home" spy={true} smooth={true} offset={-70} duration={100} 
+                              className={styles.neonText}>Inicio</ScrollLink>
+                        </Nav.Link>
+                     </Nav.Item>
+                     <Nav.Item>
+                        <Nav.Link className={styles.neonLink}>
+                           <ScrollLink to="about" spy={true} smooth={true} offset={-70} duration={100} 
+                              className={styles.neonText}>Sobre Mí</ScrollLink>
+                        </Nav.Link>
+                     </Nav.Item>
+                     <Nav.Item>
+                        <Nav.Link className={styles.neonLink}>
+                            <ScrollLink to="stack" spy={true} smooth={true} offset={-50} duration={100} 
+                                className={styles.neonText}>Tecnologías</ScrollLink>
+                        </Nav.Link>
+                     </Nav.Item>
+                     <Nav.Item>
+                        <Nav.Link className={styles.neonLink}>
+                           <ScrollLink to="projects" spy={true} smooth={true} offset={-70} duration={100} 
+                                className={styles.neonText}>Proyectos</ScrollLink>
+                        </Nav.Link>
+                     </Nav.Item>
+                     <Nav.Item>
+                        <Nav.Link className={styles.neonLink}>
+                           <ScrollLink to="contact" spy={true} smooth={true} offset={-40} duration={100} 
+                                className={styles.neonText}>Contactame</ScrollLink>
+                        </Nav.Link>
+                     </Nav.Item>
+                     <Button 
+                        onClick={onResumeClick}
+                        className={`${styles.neonButton} ms-md-4 mt-3 mt-md-0`}>
+                        Mi CV
+                    </Button>
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
+    )
 }
 
 export default Navs

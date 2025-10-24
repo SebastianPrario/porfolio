@@ -33,9 +33,7 @@ function Home() {
                <About />
             </Col>   
          </Row>
-         {/* componente Stack */}
          <Stack/> 
-         {/* componente Projects */}
          <Row className='d-none d-lg-flex my-5'>
             <Col className='col-4 '>
                <Image  roundedCircle className="mx-auto my-2 "style={{height:"200px", width:"220px"}}
@@ -53,12 +51,6 @@ function Home() {
            <Projects/>
          {/* componente Contact */}  
          <Row>
-            <Col className='d-none d-md-flex' >
-               <Row className=' d-none d-md-flex '>
-                 <Image   style={{height:"700px", width:"600px"}}
-                  src={cartel2} alt='foto' />
-               </Row>
-            </Col>
             <Col >
                <Contact /> 
             </Col>

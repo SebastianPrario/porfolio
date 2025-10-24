@@ -5,7 +5,7 @@ import styles from './About.module.css'
 
 export function About () {
   return (
-    <div className={styles.divAbout} >
+    <div id="about" className={styles.divAbout} >
       <div className="col-8 mx-auto">
         <div className=' display-5  col-12  mx-auto'>Sobre Mí
         </div>
