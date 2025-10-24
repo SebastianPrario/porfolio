@@ -16,7 +16,7 @@
     color: #333; /* Color de texto oscuro para que contraste con el fondo claro */
     border: 30px solid #5d4037; /* Borde de madera oscuro */
     border-radius: 5px;
-    padding: 2rem;
+    padding: 5rem;
     box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.4), inset 0 0 30px rgba(0, 0, 0, 0.2);
    
 }
@@ -36,14 +36,14 @@
 .marqueeContainer {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem; /* Espacio entre las dos filas del carrusel */
+    gap: 1.8rem; /* Espacio entre las dos filas del carrusel */
     width: 100%;
 }
 
 .marquee {
     position: relative;
     width: 100%; /* Ocupa el ancho del contenedor del marco */
-    height: 100px; /* Altura de cada fila del carrusel */
+    height: 150px; /* Altura de cada fila del carrusel */
     overflow-x: hidden;
 }
 
@@ -53,7 +53,7 @@
     will-change: transform;
     animation: marquee 40s linear infinite;
     display: flex;
-    gap: 2rem; /* Espacio entre los logos */
+    gap: 5rem; /* Espacio entre los logos */
 }
 
 .trackReverse {
@@ -80,11 +80,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80px; /* Ancho fijo para cada habilidad */
+    width: 90px; /* Ancho fijo para cada habilidad */
 }
 
 .hardSkills__itemimage {
-    height: 50px; /* Altura reducida para la imagen */
+    height: 90px; /* Altura reducida para la imagen */
     width: auto;
     object-fit: contain;
 }

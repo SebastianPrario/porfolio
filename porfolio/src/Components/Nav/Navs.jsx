@@ -18,7 +18,7 @@ function Navs () {
             <Navbar.Toggle 
                 aria-controls="responsive-navbar-nav" 
                 onClick={() => setExpanded(expanded ? false : "expanded")}
-                className='btn btn-outline-light'
+                className='btn btn-secondary'
             />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="justify-content-center w-100">

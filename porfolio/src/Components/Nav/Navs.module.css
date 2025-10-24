@@ -1,7 +1,11 @@
 .neonNav {
-    background: rgba(0, 0, 0, 0.9) !important;
+    background: rgba(0, 0, 0, 0.9) ;
     padding: 0.2rem !important;  /* reduced from 1rem */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(228, 217, 217, 0.1);
+
+    @media (max-width: 768px) {
+        background-color: rgb(148, 150, 150); /* adjusted for smaller screens */
+    }   
 }
 
 .neonToggle {

@@ -8,13 +8,14 @@ function Stack () {
     const secondHalf = technicalSkills.slice(half);
 
    return (
-     <div id="stack" className={styles.divStack}>
+    <div id="stack" className='p-1'>
+     <div  className={styles.divStack}>
       <section className={styles.hardSkills__container}>
           <div>
-              <h1 className='display-3 mt-0 mb-5 text-bold'>Habilidades Técnicas</h1>
+              <h1 className='display-5 mt-0 mb-5 text-bold'>Habilidades Técnicas</h1>
 
-              {/* Fila Superior: Izquierda a Derecha */}
-              <div className={styles.marquee}>
+            <div className='col-12 mx-auto'>     
+            <div className={styles.marquee}>
                   <div className={styles.track}>
                       {[...firstHalf, ...firstHalf].map((item, index) => (
                           <div className={styles.hardSkills__itemcontainer} key={`top-${index}`}>
@@ -37,7 +38,9 @@ function Stack () {
                   </div>
               </div>
           </div>
+          </div>
       </section>
+     </div>
      </div>
     )
 }
