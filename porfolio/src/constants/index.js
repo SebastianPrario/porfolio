@@ -31,11 +31,9 @@ export const projects = [
     {name:'Las Noticias Ya!' , info: 'Esta aplicación surgió con el fin de poder ver en una única página varias noticias de diferentes portales utilizando el servicio de RSS. Consiste en dividir la pantalla en tres partes, en donde cada parte tendrá información diferente.',tecno:'React , Express , Axios, Bootstrap ' , img: lasnoticias, deploy: 'https://lasnoticiasya.vercel.app'},
     {name:'GCheq' , info: 'Esta aplicacion permite el manejo de cheques de terceros, controlando la situación crediticia del emisor.Entre sus caracteristicas: ✅ Registrar y organizar cheques de terceros. ✅ Carga de cheques con control de errores. ✅ Generación de órdenes de pago o salidas de cheques, con impresión en PDF. ✅ Generación de informes con listados de cheques en cartera y cheques por cliente en un periodo de tiempo. ✅ Búsqueda rápida de cheques por su número.',tecno:'React , Nest.js , Bootstrap , PostgreSQL ' , img: gcheq , deploy: 'https://gestioncheques.netlify.app/'},
     {name:'Cheques Rechazados' , info:'Posibilita acceder a la información del Banco Central (BCRA) de forma más rápida y sencilla.', tecno: 'React , TypeScript , Bootstrap',  img:cheques , deploy: '//www.chequesrechazados.com.ar'},
-    
     {name:'Bon Appetit' , info:'Trabajo final grupal que permite a los clientes pedir a través de una app comidas en un restaurante.', tecno: 'React , Redux , Express , Sequelize , PostgreSQL , FireBase, MercadoPago , Cloudinary',  img:bon , deploy: '//bonappetite.vercel.app/'},
     {name:'Qué comemos hoy?', info:'Esta aplicación de recetas permite busquedas combinadas y crear recetas nuevas.', tecno:'React , Redux , Express , Sequelize , PostgreSQL , Axios' ,  img: food, deploy:'//pi-food-pi-hazel.vercel.app/'},
     {name:'Memotest' , info: 'Es este juego hay que encontrar las coincidencias.Tiene categorías preestablecidas o puedes crear la tuya.' ,tecno:'React , Cloudinary , Axios, CSS' , img: memo, deploy: '//memotest2024.vercel.app/'},
-    {name:'Rick and Morty' , info: 'Esta aplicación utiliza el lenguaje de consulta GraphQL para realizar busquedas en una api y mostrar los personajes de la serie',tecno:'React , GraphQL , Styled Component , Apolo Client ' , img: rick , deploy: 'https://rickandmorty-bysebastian.vercel.app/'},
    ]
 
 export const technicalSkills = [
